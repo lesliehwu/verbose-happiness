@@ -1,0 +1,16 @@
+<form>
+    <h2>
+        Initial Power Level: 
+        <input type='number' 
+        name='power'
+        [(ngModel)]='power' 
+        min='0' 
+        max='100'>
+    </h2>
+</form>
+<app-human [power]="power"></app-human>
+<app-saiyan [power]="power"></app-saiyan>
+<app-super-saiyan [power]='power'></app-super-saiyan>
+<app-super-saiyan2 [power]='power'></app-super-saiyan2>
+<app-super-saiyan3 [power]='power'></app-super-saiyan3>
+<app-super-saiyan4 [power]='power'></app-super-saiyan4>
